@@ -1,10 +1,57 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+:root {
+  --primary-color: rgb(47, 180, 224);
+}
 .navbar-active {
   background-color: white;
   opacity: 80%;
   backdrop-filter: blur(5px);
   z-index: 99999;
+}
+.dropdown {
+  display: none;
+}
+
+#home {
+  margin-top: 500px;
+}
+#home .hero-title h1 span {
+  font-weight: bold;
+  letter-spacing: 0;
+  color: var(--primary-color);
+}
+#home h1,
+h2 {
+  letter-spacing: 2px;
+}
+#home .hero-title h1,
+h2 {
+  font-size: 2rem;
+}
+#home .btn-hero {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 3px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+#home .btn-hero:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 991.98px) {
+  .dropdown {
+    display: block;
+  }
+  #home {
+    margin-top: 150px;
+  }
+  #home .hero-title h1,
+  h2 {
+    font-size: 1.5rem;
+  }
 }
